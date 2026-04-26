@@ -1,0 +1,122 @@
+.footer {
+  background: var(--surface-dark);
+  color: var(--color-neutral-400);
+  padding: var(--space-16) 0 var(--space-8);
+}
+
+[data-theme="dark"] .footer {
+  background: var(--surface-secondary);
+  border-top: 1px solid var(--border-default);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--space-10);
+  margin-bottom: var(--space-12);
+}
+
+.footer-logo {
+  font-family: var(--font-display);
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: white;
+  letter-spacing: -0.03em;
+  display: block;
+  margin-bottom: var(--space-4);
+}
+
+[data-theme="dark"] .footer-logo {
+  color: var(--text-primary);
+}
+
+.footer-logo span {
+  color: var(--color-primary-600);
+}
+
+.footer-desc {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  max-width: 300px;
+}
+
+.footer-col-title {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  color: white;
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-theme="dark"] .footer-col-title {
+  color: var(--text-primary);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.footer-links a {
+  font-size: var(--text-sm);
+  color: var(--color-neutral-400);
+  transition: color var(--transition-fast);
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+[data-theme="dark"] .footer-links a:hover {
+  color: var(--text-primary);
+}
+
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-8);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: var(--text-sm);
+}
+
+[data-theme="dark"] .footer-bottom {
+  border-color: var(--border-default);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: var(--space-10) 0 var(--space-6);
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-6);
+    margin-bottom: var(--space-8);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+    padding-top: var(--space-6);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .footer-logo {
+    font-size: var(--text-xl);
+  }
+
+  .footer-bottom {
+    font-size: var(--text-xs);
+  }
+}
