@@ -7,10 +7,6 @@ Un e-commerce moderno y completo construido con React, TypeScript y CSS nativo, 
 ![Vite](https://img.shields.io/badge/Vite-6-purple?logo=vite)
 ![CSS Native](https://img.shields.io/badge/CSS-Custom_Properties-orange?logo=css3)
 
-## Demo
-
-> _Agrega aquí el link de tu deploy en Vercel/Netlify_
-
 ## Tecnologías
 
 - **React 19** — Componentes funcionales con Hooks
@@ -57,8 +53,6 @@ cd novabuy
 npm install
 npm run dev
 ```
-
-La app estará disponible en `http://localhost:5173`
 
 ## Scripts
 
